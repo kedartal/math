@@ -199,6 +199,8 @@ inline CwiseUnaryView<vi_Op, Derived>
 vi() { return CwiseUnaryView<vi_Op, Derived>(derived());
 }
 
+#ifndef EIGEN_STAN_MATRIXBASE_PLUGIN
 #define EIGEN_STAN_MATRIXBASE_PLUGIN
+#endif
 
 #endif
